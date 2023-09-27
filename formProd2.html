@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosis.css">
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="img/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Formulario de productos</h1>
+      <form>
+        <label for="stock">Cantidad de Stock</label>
+        <input type="number" id="stock" name="stock" placeholder="Escribe la Cantidad de Stock" required>
+      
+        <label for="tamano">Tamaño</label>
+        <input type="text" id="tamano" name="tamano" placeholder="Escribe el Tamaño" required>
+      
+        <label for="peso">Peso</label>
+        <input type="number" id="peso" name="peso" placeholder="Escribe el Peso" required>
+      
+        <label for="fecha_lanzamiento">Fecha de Lanzamiento</label>
+        <input type="date" id="fecha_lanzamiento" name="fecha_lanzamiento" required>
+        <input type="submit" value="enviar" formaction="index.html">      
+      </form>
+    </div>
+  </body>
+</html>

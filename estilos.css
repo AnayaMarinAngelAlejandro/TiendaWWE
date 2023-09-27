@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+body{
+	background: whitesmoke;
+}
+header{
+	width: 100%;
+	height: 90px;
+	background-color: gray;
+}
+.interior{
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+}
+.logo{
+	float: left;
+	padding: 5px 20px 0;
+}
+.logo img{
+	height: 80px;
+}
+.logo img:hover{
+	transform: scale(1.1);
+}
+.navegacion{
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+}
+.navegacion ul{
+	list-style: none;
+	padding: 0 10px;
+}
+.navegacion ul li{
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+}
+.navegacion ul li:hover{
+	transform: scale(1.1);
+}
+.navegacion ul li a{
+	color: #ffffff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 20px;
+	transition: .3s linear;
+}
+.navegacion ul li a:hover{
+	color: #00c9bd;
+	transform: scale(1.1);
+}
+.navegacion ul li:hover .hijos{
+	display: block;
+}
+.navegacion .submenu .hijos{
+	display: none;
+	background: #0b132b;
+	position: absolute;
+	width: 100%;
+	
+}
+.navegacion .submenu .hijos li{
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+}
+.navegacion .submenu .hijos li a{
+	display: block;
+}
+.product {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	max-width: 300px;
+  }
+  .product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	grid-gap: 20px;
+  }
+  .product img {
+	max-width: 100%;
+	margin-right: 10px;
+  }
+  
+  .product .details {
+	flex: 1;
+  }
+  
+  .product h2 {
+	font-size: 18px;
+	margin: 0 0 5px;
+  }
+  
+  .product p {
+	font-size: 14px;
+	margin: 0 0 10px;
+  }
+  
+  .buy-button {
+	padding: 5px 10px;
+	background-color: #0066CC;
+	color: white;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .buy-button:hover {
+	background-color: #0052A3;
+  }
+  footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #333; 
+	color: #fff; 
+	text-align: center;
+  }
+  #about {
+	background-color: #f2f2f2;
+	padding: 50px 0;
+  }
+  
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+  }
+  
+  h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 30px;
+  }
+  
+  p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+  }
+  

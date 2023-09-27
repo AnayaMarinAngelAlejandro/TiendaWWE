@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosis.css">
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="img/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Formulario de Pedidos</h1>
+      <form>
+        <label for="estado_pedido">Estado del Pedido</label>
+        <select id="estado_pedido" name="estado_pedido" required>
+          <option value="pendiente">Pendiente</option>
+          <option value="procesando">Procesando</option>
+          <option value="enviado">Enviado</option>
+          <option value="entregado">Entregado</option>
+        </select>
+      
+        <label for="direccion_envio">Dirección de Envío</label>
+        <input type="text" id="direccion_envio" name="direccion_envio" placeholder="Escribe la Dirección de Envío" required>
+      
+        <label for="costo_total">Costo Total</label>
+        <input type="number" id="costo_total" name="costo_total" placeholder="Escribe el Costo Total" required>
+      
+        <label for="observaciones">Observaciones</label>
+        <textarea id="observaciones" name="observaciones" placeholder="Escribe Observaciones"></textarea>
+        <input type="submit" value="enviar" formaction="index.html">      
+      </form>
+    </div>
+  </body>
+</html>

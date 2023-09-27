@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosis.css">
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="img/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Formulario del detalle del pedido</h1>
+      <form>
+        <label for="id_pedido">ID del Pedido</label>
+        <input type="text" id="id_pedido" name="id_pedido" placeholder="Escribe el ID del Pedido" required>
+      
+        <label for="id_cliente">ID del Cliente</label>
+        <input type="text" id="id_cliente" name="id_cliente" placeholder="Escribe el ID del Cliente" required>
+      
+        <label for="fecha_pedido">Fecha del Pedido</label>
+        <input type="date" id="fecha_pedido" name="fecha_pedido" required>
+      
+        <label for="metodo_pago">Método de Pago</label>
+        <select id="metodo_pago" name="metodo_pago" required>
+          <option value="tarjeta">Tarjeta de Crédito</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="paypal">PayPal</option>
+        </select>
+        <input type="submit" value="Siguiente" formaction="formPed2.html">      
+      </form>
+    </div>
+  </body>
+</html>

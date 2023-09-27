@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosis.css">
+  </head>
+  <body>
+
+    <div class="login-box">
+      <img src="img/logo.png" class="avatar" alt="Avatar Image">
+      <h1>Formulario de Categoria de los pedidos</h1>
+      <form>
+        <label for="imagen">Imagen</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+      
+        <label for="fecha_creacion">Fecha de Creación</label>
+        <input type="date" id="fecha_creacion" name="fecha_creacion" required>
+      
+        <label for="fecha_actualizacion">Fecha de Actualización</label>
+        <input type="date" id="fecha_actualizacion" name="fecha_actualizacion" required>
+      
+        <label for="estado_categoria">Estado de la Categoría</label>
+        <select id="estado_categoria" name="estado_categoria" required>
+          <option value="activo">Activo</option>
+          <option value="inactivo">Inactivo</option>
+        </select>
+        <input type="submit" value="enviar" formaction="index.html">      
+      </form>
+    </div>
+  </body>
+</html>
